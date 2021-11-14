@@ -1,0 +1,312 @@
+* {
+    box-sizing: border-box;
+  }
+
+#mainDiv{
+    background-image: url("https://media.istockphoto.com/videos/concert-stage-light-effect-video-id1291883931?s=640x640");
+    opacity: 0.85;
+    height: 600px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+#firstDiv{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    padding-top: 10px;
+}
+
+
+
+
+@media only screen and (max-width: 799px) {
+    #firstDiv{ 
+        height: 20px;
+    }
+  }
+
+
+
+
+
+#searchId{
+    width: 360px;
+    height: 40px;
+    background-color: rgba(95, 41, 64, 0.4);
+    color: white;
+    font-size: 1.3rem;
+}
+
+
+
+@media only screen and (max-width: 799px) {
+    #searchId{ 
+        height: 20px;
+    }
+  }
+
+
+
+#searchId::placeholder{
+    color: rgb(118, 210, 238);
+    font-size: 1.3rem;
+}
+@media only screen and (max-width: 799px) {
+    #searchId::placeholder{ 
+        font-size: 1rem;
+    }
+  }
+.secondDivElement{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 50px;
+}
+
+
+@media only screen and (max-width: 799px) {
+    .secondDivElement{
+        height: 550px; 
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+    }
+  }
+
+
+
+.cardsRow{
+    margin: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    height: 230px;
+}
+/* @media (max-width: 768px) { 
+    .cardsRow {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px; 
+    }
+    .event1 {
+      order: 2;
+    }
+    .event2 {
+        order: 3;
+      }
+    .event3 {
+        order: 4;
+      }
+    .event4 {
+        order: 5;
+      }
+    .event5 {
+          order: 6;
+        }
+    .event6 {
+          order: 7;
+        }
+    .event7 {
+            order: 8;
+          }
+    .event8 {
+              order: 9;
+            }
+        }  */
+
+
+
+
+@media only screen and (max-width: 799px) {
+    .cardsRow{ 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 10px;
+    }
+  }
+
+
+  .singleCard{
+    background-color: rgba(11, 14, 235, 0.35);
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5px;
+}
+
+
+
+@media only screen and (max-width: 799px) {
+    .singleCard{ 
+        display: grid;
+        height: 115px;
+        border-color: grey;
+    }
+  }
+
+  /* @media 
+  (min-device-width: 800px) 
+  and (max-device-width: 1280px) {
+    .singleCard{ 
+        display: grid;
+        height: 170px;
+        border-color: grey;
+    }
+} */
+
+.singleCard:hover{
+    transform: scale3d(1.020, 1.020, 1);
+}
+.headClass{
+    display: grid;
+    grid-column: span 2;
+    font-family: 'Crete Round', serif;
+    font-size: 2rem;
+    color: wheat;
+    justify-content: center;
+}
+
+
+
+@media only screen and (max-width: 799px) {
+    .headClass{ 
+        display: grid;
+        height: 5px;
+        font-size: .75rem;
+    }
+  }
+
+
+  /* @media 
+  (min-device-width: 800px) 
+  and (max-device-width: 1280px) {
+    .headClass{ 
+        display: grid;
+        height: 5px;
+        font-size: .75rem;
+    }
+} */
+.leftClass{
+    display: grid;
+    grid-row-start: 2;
+    grid-row-end: span 3;
+    margin-top: 20px;
+}
+.centerName{
+    margin-left: 10px;
+    color: wheat;
+}
+
+
+
+@media only screen and (max-width: 799px) {
+    .centerName{
+        font-size: .75rem;
+        height: 20px;
+    }
+  }
+
+.dataClass{
+    padding-left: 20px;
+    font-family: 'Crete Round', serif; 
+    font-family: 'Righteous', cursive;
+    font-size: .85rem;
+    color: wheat;
+}
+
+
+@media (max-device-width: 799px) {
+    .dataClass{
+        margin-top: 5px;
+        font-size: .85rem;
+    }
+  }
+@media 
+  (min-device-width: 800px) 
+  and (max-device-width: 1100px) {
+    .dataClass{
+        font-size: .55rem;
+    }
+}
+
+.seatClass{
+    font-family: 'Crete Round', serif; 
+    font-family: 'Righteous', cursive;
+    font-size: .8rem;
+    color: wheat;
+}
+
+
+ @media only screen and (max-width: 799px) {
+    .seatClass{
+        font-size: .65rem;
+    }
+  }
+
+ /* @media 
+  (min-device-width: 800px) 
+  and (max-device-width: 1280px) {
+    .seatClass{
+        font-size: 1rem;
+    }
+} */
+
+
+.bookClass{
+    justify-items: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+
+
+
+
+@media only screen and (max-width: 799px) {
+    .btn{
+        font-size: .58rem;
+        height: 20px;
+        justify-content: center;
+        align-content: center;
+    }
+  }
+
+  @media 
+  (min-device-width: 800px) 
+  and (max-device-width: 1100px) {
+    .btn{
+        font-size: .48rem;
+        height:40px;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+
+
+.btn:hover{
+    transform: scale3d(1.020, 1.020, 1);
+
+}
+
+.btn:disabled{
+    cursor: none;
+    color : solid black;
+    background-color: darkgray;
+
+}
+
+
+.img-thumbnaill {
+    padding: 0.25rem;
+    border-radius: 5rem;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 799px) {
+    .img-thumbnaill{ 
+        height: 50px;
+    }
+  }
